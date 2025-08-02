@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="center" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="842.0" prefWidth="1329.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <AnchorPane fx:id="scene_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="834.0" prefWidth="1324.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+      <children>
+         <Label alignment="CENTER" layoutX="50.0" layoutY="43.0" prefHeight="26.0" prefWidth="1190.0" style="-fx-font-size: 16; -fx-font-weight: bold;" text="Logged in as Employee" />
+         <Button layoutX="226.0" layoutY="39.0" mnemonicParsing="false" onAction="#employeeHomeBtn" style="-fx-font-size: 16; -fx-background-color: #0284c7; -fx-font-weight: bold;" text="Menu" />
+         <Button layoutX="984.0" layoutY="39.0" mnemonicParsing="false" onAction="#logOutBtn" style="-fx-background-color: #FF5733; -fx-font-weight: bold; -fx-font-size: 16;" text="Log Out" />
+         <RadioButton fx:id="addTaskRadioBtn" layoutX="587.0" layoutY="178.0" mnemonicParsing="false" onAction="#disableTaskDescription" style="-fx-font-size: 16; -fx-font-weight: bold;" text="Add Task">
+            <toggleGroup>
+               <ToggleGroup fx:id="task" />
+            </toggleGroup>
+         </RadioButton>
+         <RadioButton fx:id="startTaskRadioBtn" layoutX="697.0" layoutY="178.0" mnemonicParsing="false" onAction="#disableTaskDescription" style="-fx-font-weight: bold; -fx-font-size: 16;" text="Start Task" toggleGroup="$task" />
+         <RadioButton fx:id="endTaskRadioBtn" layoutX="816.0" layoutY="178.0" mnemonicParsing="false" onAction="#disableTaskDescription" style="-fx-font-size: 16; -fx-font-weight: bold;" text="End Task" toggleGroup="$task" />
+         <TextField fx:id="eventIdTaskManage" layoutX="587.0" layoutY="136.0" style="-fx-font-size: 16;" />
+         <TextField fx:id="taskTitleTaskManage" layoutX="587.0" layoutY="210.0" style="-fx-font-size: 16;" />
+         <Label layoutX="493.0" layoutY="141.0" style="-fx-font-size: 16; -fx-font-weight: bold;" text="Event id:" />
+         <Label layoutX="482.0" layoutY="215.0" style="-fx-font-size: 16; -fx-font-weight: bold;" text="Task Title:" />
+         <Button layoutX="624.0" layoutY="303.0" mnemonicParsing="false" onAction="#manageTasks" style="-fx-font-size: 16; -fx-background-color: #0284c7; -fx-font-weight: bold;" text="Update" />
+         <Label alignment="CENTER" layoutX="67.0" layoutY="347.0" prefHeight="18.0" prefWidth="1190.0" style="-fx-font-size: 16; -fx-font-weight: bold;" text="Event Status" />
+         <TextField fx:id="taskDescriptionTaskManage" layoutX="587.0" layoutY="254.0" style="-fx-font-size: 16;" />
+         <Label layoutX="447.0" layoutY="260.0" style="-fx-font-size: 16; -fx-font-weight: bold;" text="Task Description:" />
+         <Button fx:id="messgaeBoxTaskManage" visible="false" layoutX="25.0" layoutY="93.0" prefHeight="26.0" prefWidth="1273.0" textAlignment="CENTER" />
+         <Text layoutX="53.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 16; -fx-font-weight: bold;" text="Manage Tasks" textAlignment="CENTER" wrappingWidth="1190.4" />
+<!--         <ListView fx:id="allEventsList" layoutX="26.0" layoutY="377.0" prefHeight="338.0" prefWidth="1135.0" />-->
+         <TableView fx:id="eventTableViewForEmployee" layoutX="62.0" layoutY="388.0" prefHeight="373.0" prefWidth="1200">
+            <columns>
+               <TableColumn fx:id="eventIdTableViewForEmployee" prefWidth="150" text="Id" />
+               <TableColumn fx:id="eventTitleTableViewForEmployee" prefWidth="150" text="Event Title" />
+               <TableColumn fx:id="eventDateTableViewForEmployee" prefWidth="150" text="Event Date" />
+               <TableColumn fx:id="eventManagerForEmployee" prefWidth="150" text="Manager" />
+               <TableColumn fx:id="eventDurationDaysForEmployee" prefWidth="150" text="Event Durations Days" />
+               <TableColumn fx:id="perPersonPriceForEmployee" prefWidth="150" text="Per Person Price" />
+               <TableColumn fx:id="eventNumOfParticipantsForEmployee" prefWidth="150" text="Total Participants" />
+               <TableColumn fx:id="allTaskListForEmployee" prefWidth="150" text="Tasks" />
+            </columns>
+         </TableView>
+         <Label layoutX="468.0" layoutY="177.0" style="-fx-font-weight: bold; -fx-font-size: 16;" text="Select Action:" />
+      </children>
+   </AnchorPane>
+</VBox>

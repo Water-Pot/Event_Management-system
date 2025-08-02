@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="center" minHeight="-Infinity" minWidth="-Infinity" prefHeight="846.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+    <AnchorPane fx:id="scene_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="845.0" prefWidth="1208.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+        <children>
+            <TableView fx:id="eventTableViewForCustomerRegisterTour" layoutX="75.0" layoutY="327.0" onMouseClicked="#getData" prefHeight="348.0" prefWidth="1050">
+                <columns>
+                    <TableColumn fx:id="eventIdTableViewForCustomer" prefWidth="150" text="Id" />
+                    <TableColumn fx:id="eventTitleTableViewForCustomer" prefWidth="150" text="Event Title" />
+                    <TableColumn fx:id="eventDateTableViewForCustomer" prefWidth="150" text="Event Date" />
+                    <TableColumn fx:id="eventDurationDaysForCustomer" prefWidth="150" text="Event Durations Days" />
+                    <TableColumn fx:id="perPersonPriceForCustomer" prefWidth="150" text="Per Person Price" />
+                    <TableColumn fx:id="eventNumOfParticipantsForCustomer" prefWidth="150" text="Total Participants" />
+                    <TableColumn fx:id="totalRegisteredForCustomer" prefWidth="150" text="Registered Participants" />
+                </columns>
+            </TableView>
+            <Button layoutX="215.0" layoutY="81.0" mnemonicParsing="false" onAction="#employeeHomeBtn" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-background-color: #0284c7;" text="Menu" />
+            <Button layoutX="935.0" layoutY="81.0" mnemonicParsing="false" onAction="#logOutBtn" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-background-color: #FF5733;" text="Logout" />
+            <Button layoutX="579.0" layoutY="230.0" mnemonicParsing="false" onAction="#searchForTourForCustomer" style="-fx-font-size: 16; -fx-background-color: #0284c7; -fx-font-weight: bold;" text="Search" />
+            <Label layoutX="569.0" layoutY="285.0" style="-fx-font-size: 16; -fx-font-weight: bold;" text="Event Status" />
+            <Label layoutX="542.0" layoutY="85.0" style="-fx-font-size: 16; -fx-font-weight: bold;" text="Logged in as Employee" />
+            <Label layoutX="571.0" layoutY="119.0" style="-fx-font-size: 16; -fx-font-weight: bold;" text="Search Tour" />
+            <TextField fx:id="searchTourId" layoutX="534.0" layoutY="167.0" promptText="Event Title" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-alignment: center;" />
+            <Label layoutX="441.0" layoutY="173.0" style="-fx-font-size: 16; -fx-font-weight: bold;" text="Event Title" />
+        </children>
+    </AnchorPane>
+</VBox>

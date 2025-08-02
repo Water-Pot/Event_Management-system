@@ -1,0 +1,22 @@
+package Test;
+
+import event.lib.DataHandler;
+import event.lib.EventPlanner;
+
+import java.time.LocalDate;
+
+public class Test {
+    public static void main(String[] args) {
+        try{
+            EventPlanner evp1=new EventPlanner("EVP1");
+            evp1.loadData();
+            String id=evp1.offerTourPackage("Tour Kaptai", LocalDate.now(),20,20,2000);
+            evp1.addEventTask(id,"DAC","DAC");
+            System.out.println(evp1.getEvents());
+            System.out.println(evp1);
+            evp1.saveData();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}

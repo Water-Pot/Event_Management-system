@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="center" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <AnchorPane fx:id="scene_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="737.0" prefWidth="1138.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+      <children>
+            <Text layoutX="342.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold; -fx-font-size: 16;" text="Event title" />
+            <Text layoutX="313.0" layoutY="401.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold; -fx-font-size: 16;" text="Number of People" />
+            <Text layoutX="332.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold; -fx-font-size: 16;" text="Duration Days" />
+            <Text layoutX="313.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold; -fx-font-size: 16;" text="Customer Contact" />
+            <Text layoutX="337.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold; -fx-font-size: 16;" text="Event dates" />
+            <Text layoutX="470.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold; -fx-font-size: 16;" text="Logged in as Customer" />
+            <Button layoutX="255.0" layoutY="44.0" mnemonicParsing="false" onAction="#customerHomeBtn" style="-fx-font-weight: bold; -fx-font-size: 16; -fx-background-color: #0284c7;" text="Menu" />
+            <Button layoutX="720.0" layoutY="44.0" mnemonicParsing="false" onAction="#logOutBtn" style="-fx-font-weight: bold; -fx-font-size: 16; -fx-background-color: #FF5733;" text="Log Out" />
+            <Button layoutX="504.0" layoutY="432.0" mnemonicParsing="false" onAction="#requestForCorporateEventSubmitBtn" style="-fx-font-weight: bold; -fx-font-size: 16; -fx-background-color: #0284c7;" text="Request" />
+            <TextField fx:id="eventTitleForRequestForCorporateEvent" layoutX="461.0" layoutY="165.0" promptText="Event Title" style="-fx-font-weight: bold; -fx-font-size: 16;" />
+            <TextField fx:id="customerContactForRequestForCorporateEvent" layoutX="463.0" layoutY="270.0" promptText="Your Contact" style="-fx-font-weight: bold; -fx-font-size: 16;" />
+            <TextField fx:id="durationDaysForRequestForCorporateEvent" layoutX="460.0" layoutY="323.0" promptText="Duration Day" style="-fx-font-weight: bold; -fx-font-size: 16;" />
+            <TextField fx:id="numberOfParticipantsForRequestForCorporateEvent" layoutX="465.0" layoutY="377.0" promptText="Number of People" style="-fx-font-weight: bold; -fx-font-size: 16;" />
+            <DatePicker fx:id="eventDateForRequestForCorporateEvent" layoutX="460.0" layoutY="217.0" prefHeight="37.0" prefWidth="213.0" promptText="Select Date" style="-fx-font-weight: bold; -fx-font-size: 16;" />
+         <Button visible="false" fx:id="messageBoxForRequestForCorporateEvent" layoutX="4.0" layoutY="108.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="1126.0" style="-fx-alignment: center; -fx-font-size: 16; -fx-font-weight: bold;" text="Button" />
+         </children>
+      </AnchorPane>
+</VBox>

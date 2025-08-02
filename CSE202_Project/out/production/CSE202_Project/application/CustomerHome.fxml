@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="center" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <AnchorPane fx:id="scene_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="737.0" prefWidth="1138.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+      <children>
+      <Button layoutX="468.0" layoutY="210.0" mnemonicParsing="false" onAction="#requestForCorporateEventBtn" prefHeight="37.0" prefWidth="263.0" style="-fx-background-color: #0284c7; -fx-font-weight: bold; -fx-font-size: 16;" text="Request For Corporate Event" />
+      <Button layoutX="513.0" layoutY="304.0" mnemonicParsing="false" onAction="#registerForTourBtn" prefHeight="37.0" prefWidth="171.0" style="-fx-background-color: #0284c7; -fx-font-weight: bold; -fx-font-size: 16;" text="Register For Event"/>
+      <Button layoutX="553.0" layoutY="352.0" mnemonicParsing="false" onAction="#payBillBtn" prefHeight="25.0" prefWidth="91.0" style="-fx-background-color: #0284c7; -fx-font-size: 16; -fx-font-weight: bold;" text="Pay Bill" />
+      <Button layoutX="561.0" layoutY="400.0" mnemonicParsing="false" onAction="#logOutBtn" style="-fx-background-color: #FF5733; -fx-font-weight: bold; -fx-font-size: 16;" text="Logout" />
+      <Text layoutX="15.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold; -fx-font-size: 16;" text="Logged in as Customer" textAlignment="CENTER" wrappingWidth="1170.9366760253906" />
+         <Button layoutX="528.0" layoutY="258.0" mnemonicParsing="false" style="-fx-background-color: #0284c7; -fx-font-weight: bold; -fx-font-size: 16;" text="Search For Tour" onAction="#searchForTourBtnForCustomer"/>
+   </children>
+</AnchorPane>
+</VBox>
